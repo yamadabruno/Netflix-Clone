@@ -1,0 +1,50 @@
+.popCorn-right{
+    width: 300px;
+    height: 680px;
+
+    @include responsive(s){
+        width: 200px;
+        height: 450px;
+    }
+
+    position: absolute;
+    z-index: -999;
+
+    right: 0;
+    // top: 0;
+
+    // background-color: red;
+
+    background: url("../assets/background/backgroundPopCorn.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    }
+
+    .popCorn-left{
+
+    width: 300px;
+    height: 680px;
+
+    @include responsive(s){
+        width: 200px;
+        height: 450px;
+    }
+    
+    position: absolute;
+    z-index: -999;
+
+    left: 0;
+    transform: rotate(180deg);
+    // top: 0;
+
+    // background-color: red;
+
+    background: url("../assets/background/backgroundPopCorn.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+        
+    }

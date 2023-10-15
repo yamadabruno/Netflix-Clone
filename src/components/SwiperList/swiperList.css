@@ -1,0 +1,167 @@
+.SwiperList .active {
+  opacity: 1;
+  background: rgba(240, 223, 223, 0.24);
+  filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transform: translateY(-2px);
+}
+.SwiperList .menuSwiper {
+  justify-content: flex-start;
+  padding: 0px 96px;
+}
+.SwiperList .menuSwiper::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 40%;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(8, 5, 6, 0) 0%, #E50914 50%, rgba(8, 5, 6, 0) 91.67%);
+  border-radius: 2px;
+  transform: matrix(1, 0, 0.28, 0.96, 0, 0);
+}
+@media screen and (max-width: 745px) {
+  .SwiperList .menuSwiper {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 16px;
+  }
+  .SwiperList .menuSwiper .title {
+    margin: 0 auto 8px auto;
+    width: 100%;
+  }
+  .SwiperList .menuSwiper .title::after {
+    margin: 0.5rem auto 0 auto;
+  }
+  .SwiperList .menuSwiper::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 40%;
+    height: 3px;
+    margin-top: 20px;
+    background: linear-gradient(90deg, rgba(8, 5, 6, 0) 0%, #E50914 50%, rgba(8, 5, 6, 0) 91.67%);
+    border-radius: 2px;
+    transform: matrix(1, 0, 0.28, 0.96, 0, 0);
+  }
+}
+@media screen and (max-width: 490px) {
+  .SwiperList .menuSwiper .SwiperList-buttonContainer {
+    flex-wrap: wrap;
+  }
+}
+.SwiperList .title::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 80%;
+  height: 3px;
+  margin-top: 0.25rem;
+  border-radius: 0.125rem;
+  background: linear-gradient(89.97deg, #E50914 0%, rgba(8, 5, 6, 0) 101.2%);
+  transform: matrix(1, 0, 0.28, 0.96, 0, 0);
+  border-radius: 2px;
+}
+@media screen and (max-width: 960px) {
+  .SwiperList .title::after {
+    background: linear-gradient(90deg, rgba(8, 5, 6, 0) 0%, #E50914 50%, rgba(8, 5, 6, 0) 91.67%);
+    transform: matrix(1, 0, 0.28, 0.96, 0, 0);
+  }
+}
+.SwiperList body, .SwiperList html {
+  width: 100%;
+}
+.SwiperList .mySwiper {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 8px;
+  padding-bottom: 64px;
+  max-width: 100%;
+}
+.SwiperList .mySwiper::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 8%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(10, 1, 1, 0.8) 0%, rgba(10, 1, 1, 0) 100%), linear-gradient(90deg, rgba(10, 1, 1, 0.8) 0%, rgba(10, 1, 1, 0) 100%), linear-gradient(90deg, rgba(10, 1, 1, 0.8) 0%, rgba(10, 1, 1, 0) 100%), linear-gradient(90deg, rgba(10, 1, 1, 0.8) 0%, rgba(10, 1, 1, 0) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+.SwiperList .mySwiper::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 7%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(10, 1, 1, 0.8) -0.21%, rgba(10, 1, 1, 0) 100%), linear-gradient(270deg, rgba(10, 1, 1, 0.8) -0.21%, rgba(10, 1, 1, 0) 100%), linear-gradient(270deg, rgba(10, 1, 1, 0.8) -0.21%, rgba(10, 1, 1, 0) 100%), linear-gradient(270deg, rgba(10, 1, 1, 0.8) -0.21%, rgba(10, 1, 1, 0) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+.SwiperList .swiper {
+  width: 100%;
+}
+.SwiperList .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  padding: 0;
+  margin: 1rem 1rem;
+  max-width: 232px;
+  height: 100%;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 540px) {
+  .SwiperList .swiper-slide {
+    width: 196px;
+    height: 100%;
+    margin: 1rem 0;
+  }
+}
+.SwiperList .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.SwiperList .swiper-button-next,
+.SwiperList .swiper-button-prev {
+  padding: 0px 19px;
+}
+@media screen and (max-width: 960px) {
+  .SwiperList .swiper-button-next,
+  .SwiperList .swiper-button-prev {
+    display: none;
+  }
+}
+.SwiperList .swiper-button-prev {
+  border-width: 6px 0px 0px 6px;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-radius: 10px;
+  transform: rotate(-45deg);
+  z-index: 999;
+  margin-left: 2rem;
+}
+.SwiperList .swiper-button-next {
+  border-width: 6px 0px 0px 6px;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-radius: 10px;
+  transform: matrix(-0.71, -0.71, -0.71, 0.71, 0, 0);
+  z-index: 999;
+  margin-right: 2rem;
+}
+.SwiperList .swiper-button-next::after,
+.SwiperList .swiper-button-prev::after {
+  content: "";
+}
+.SwiperList .swiper-pagination-bullet {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+}/*# sourceMappingURL=swiperList.css.map */

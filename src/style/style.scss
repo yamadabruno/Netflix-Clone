@@ -1,0 +1,77 @@
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import "partials/colors";
+@import "partials/layout";
+@import "partials/typography";
+@import "partials/buttons";
+@import "partials/spacing";
+
+html {
+  // Scrool mais suave de transição
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  // padding: 0 1rem;
+
+  // teste
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+
+  scroll-behavior: smooth;
+
+  background-color: $black-dark;
+}
+
+#root{
+  width: 100%;
+  height: 100%;
+  // background-color: red;
+  // position: absolute;
+}
+
+// Para deixar imagens e SVGs fluidos
+svg {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.border {
+  border: 1px solid red;
+}
+
+@import "partials/swiper";
+@import "partials/icons";
+@import "../components/Header/header";
+@import "../components/CardMain/cardMain";
+@import "../components/Card/card";
+@import "../components/CardDescription/cardDescription";
+@import "../components/LoginForm/loginRegisterForm";
+@import "../components/AdmProfile/profile";
+@import "../components/CardBoard/cardBoard";
+@import "../components/Footer/footer";
+@import "../style/partials/compositionElement";
+@import "../components/CardList/cardList";
+@import "../components/FilterMenu/filterMenu";
+@import "../components/Loading/loading"

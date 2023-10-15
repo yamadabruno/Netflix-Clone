@@ -1,0 +1,161 @@
+
+
+.footerContainer{
+    
+    position: relative;
+
+    width: 100%;
+    height: 60%;
+
+    align-items: flex-end;
+
+    margin-top: 0px;
+
+    @include responsive(s){
+        padding-bottom: 80px;
+        margin-top: 100px;
+    }
+
+    &::before{
+        content: "";
+        // display: block;
+        position: absolute;
+
+        width: 100%;
+        height: 100%;
+        margin-bottom: 1rem;
+        @include responsive (s){
+            margin-bottom: 1rem;
+        }
+
+        // border: 5px solid red;
+
+        background-image: url("../assets/background/backgroundFooter.jpg");
+        background-position:bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        z-index: -9999;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+
+        width: 100%;
+        height: 150%;
+        
+        background: linear-gradient(180deg, #0A0101 0%, rgba(5, 1, 1, 0.00) 46.88%, rgba(0, 0, 0, 0.32) 100%),linear-gradient(180deg, #0A0101 0%, rgba(5, 1, 1, 0.00) 46.88%, rgba(0, 0, 0, 0.32) 100%),linear-gradient(180deg, #0A0101 0%, rgba(5, 1, 1, 0.00) 46.88%, rgba(0, 0, 0, 0.32) 100%);
+
+        z-index: -9998;
+    }
+
+    .logo{
+        // border: 1px solid rgb(103, 103, 103);
+        background-image: url("../assets/icons/logoIcon.svg");
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 200px;
+        @include responsive(xs){
+            width: 150px;
+        }
+
+        height: 38.69px;
+
+        cursor: pointer;
+    }
+    .iconInstagram{
+        width: 24px;
+        height: 24px;
+
+        @include responsive(s){
+            width: 20px;
+            height: 20px;
+        }
+        @include responsive(xs){
+            width: 16px;
+            height: 16px;
+        }
+
+        background: url("../assets/icons/iconInstagram.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        cursor: pointer;
+
+        transition: .3s ease;
+
+        &:hover{
+            background: url("../assets/icons/iconInstagramActive.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            transform: translateY(-1px);
+        }
+    }
+    .iconLinkedIn{
+        width: 24px;
+        height: 24px;
+
+        @include responsive(s){
+            width: 20px;
+            height: 20px;
+        }
+        @include responsive(xs){
+            width: 16px;
+            height: 16px;
+        }
+
+        background: url("../assets/icons/iconLinkedIn.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        cursor: pointer;
+
+        transition: .3s ease;
+
+        &:hover{
+            background: url("../assets/icons/iconLinkedInActive.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            transform: translateY(-1px);
+        }
+    }
+    .iconGitHub{
+        width: 26px;
+        height: 26px;
+
+        @include responsive(s){
+            width: 22px;
+            height: 22px;
+        }
+        @include responsive(xs){
+            width: 18px;
+            height: 18px;
+        }
+
+        background: url("../assets/icons/iconGitHub.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        cursor: pointer;
+
+        transition: .3s ease;
+
+        &:hover{
+            background: url("../assets/icons/iconGitHubActive.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            transform: translateY(-2px);
+        }
+    }
+}

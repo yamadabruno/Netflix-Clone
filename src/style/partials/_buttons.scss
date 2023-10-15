@@ -1,0 +1,1084 @@
+//Card Description
+.primary-button{
+  position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+
+    padding: 8px 16px;
+
+  cursor: pointer;
+
+  // border: 1px solid red;
+  color: $white-normal;
+  text-transform: uppercase;
+
+  background: rgba(240, 223, 223, 0.16);
+
+
+  // padding: 1rem 2rem ;
+
+  border-radius: 32px;
+  transition: .5s ease;
+  &:hover{
+    opacity: 1;
+    background: rgba(240, 223, 223, 0.32);
+    filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: translateY(-2px);
+  }
+
+}
+.second-button{
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+
+  cursor: pointer;
+
+  // border: 1px solid red;
+  color: $white-normal;
+  text-transform: uppercase;
+
+  background: rgba(240, 223, 223, 0.16);
+
+  width: 146px;
+  height: 44px;
+
+  // padding: 1rem 2rem ;
+
+  border-radius: 32px;
+  padding-left: 32px;
+
+  &::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+
+    left: 18%;
+    width: 16px;
+    height: 20px;
+
+    background-image: url("../assets/icons/saveIcon.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: .5s ease;
+  }
+  transition: .5s ease;
+  &:hover{
+    opacity: 1;
+    background: rgba(240, 223, 223, 0.32);
+    filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: translateY(-2px);
+    &::before{
+        background-image: url("../assets/icons/saveIconHold.svg");
+    }
+  }
+}
+
+.buttonIconPlay{
+  &::before{
+    width: 20px;
+    height: 20px;
+    top: 25%;
+    left: 15%;
+    background-image: url("../assets/icons/iconPlayButton.svg");
+  }
+  &:hover{
+    &::before{
+      background-image: url("../assets/icons/iconPlayButtonActive.svg");
+      transform: translateX(5px);
+  }
+  }
+}
+
+.buttonIconPlayCard{
+
+  opacity: 1;
+    background: rgba(240, 223, 223, 0.32);
+    filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: translateY(-2px);
+    
+  &::before{
+    width: 20px;
+    height: 20px;
+    top: 25%;
+    left: 15%;
+    background-image: url("../assets/icons/iconPlayButtonActive.svg");
+    transform: translateX(5px);
+
+    
+  }
+  &:hover{
+    &::before{
+      background-image: url("../assets/icons/iconPlayButtonActive.svg");
+      transform: translateX(5px) ;
+  }
+  }
+}
+
+.buttonIcon{
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+
+cursor: pointer;
+
+color: $white-normal;
+
+background: rgba(240, 223, 223, 0.08);
+
+width: 48px;
+height: 48px;
+
+border-radius: 32px;
+
+&::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+
+    left: 25%;
+    top: 30%;
+    width: 24px;
+    height: 21px;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .5s ease;
+}
+transition: .5s ease;
+&:hover{
+    opacity: 1;
+    background: rgba(240, 223, 223, 0.32);
+    filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: translateY(-4px);
+  }
+}
+
+.buttonIconReverse{
+  transform: translateY(-2px);
+  &::before{
+    width: 26px;
+    height: 21px;
+    background-image: url("../assets/icons/iconReverse.svg");
+  }
+}
+.rotateIcon{
+  &::before{
+    transform: rotate(-180deg);
+  }
+}
+.saveButton{
+        position: relative;
+        background-color: transparent;
+        text-decoration: none;
+        border: none;
+    
+    cursor: pointer;
+
+    // border: 1px solid red;
+    color: $white-normal;
+    text-transform: uppercase;
+
+    background: rgba(240, 223, 223, 0.16);
+    
+    width: 152px;
+    height: 48px;
+
+    border-radius: 32px;
+    padding-left: 32px;
+
+    &::before{
+        content: "";
+        display: inline-block;
+        position: absolute;
+
+        left: 18%;
+        width: 16px;
+        height: 20px;
+
+        background-image: url("../assets/icons/saveIcon.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: .5s ease;
+    }
+    transition: .5s ease;
+    &:hover{
+        opacity: 1;
+        background: rgba(240, 223, 223, 0.32);
+        filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        transform: translateY(-2px);
+        &::before{
+            background-image: url("../assets/icons/saveIconHold.svg");
+        }
+    }
+    }
+    .saveButtonActive{
+      position: relative;
+      background-color: transparent;
+      text-decoration: none;
+      border: none;
+  
+      cursor: pointer;
+
+      // border: 1px solid red;
+      color: $white-normal;
+      text-transform: uppercase;
+
+      background: rgba(240, 223, 223, 0.16);
+      
+      width: 152px;
+      height: 48px;
+
+      border-radius: 32px;
+      padding-left: 32px;
+
+      &::before{
+          content: "";
+          display: inline-block;
+          position: absolute;
+
+          left: 18%;
+          width: 16px;
+          height: 20px;
+
+          background-image: url("../assets/icons/saveIconHold.svg");
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          transition: .5s ease;
+      }
+      transition: .5s ease;
+    &:hover{
+        opacity: 1;
+        background: rgba(240, 223, 223, 0.32);
+        filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        transform: translateY(-2px);
+        &::before{
+            background-image: url("../assets/icons/saveIconHold.svg");
+        }
+    }
+  }
+    .likeButton{
+        position: relative;
+        background-color: transparent;
+        text-decoration: none;
+        border: none;
+    
+    cursor: pointer;
+
+    color: $white-normal;
+
+    background: rgba(240, 223, 223, 0.16);
+    
+    width: 48px;
+    height: 48px;
+
+    border-radius: 32px;
+
+    &::before{
+        content: "";
+        display: inline-block;
+        position: absolute;
+
+        left: 25%;
+        top: 30%;
+        width: 24px;
+        height: 21px;
+
+        background-image: url("../assets/icons/likeIcon.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: .5s ease;
+    }
+    transition: .5s ease;
+    &:hover{
+        opacity: 1;
+        background: rgba(240, 223, 223, 0.32);
+        filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        transform: translateY(-2px);
+        &::before{
+            background-image: url("../assets/icons/likeIconHold.svg");
+        }
+    }
+    }
+
+    .likeButtonActive{
+      position: relative;
+      background-color: transparent;
+      text-decoration: none;
+      border: none;
+  
+      cursor: pointer;
+
+      color: $white-normal;
+
+      background: rgba(240, 223, 223, 0.16);
+      
+      width: 48px;
+      height: 48px;
+
+      border-radius: 32px;
+
+  &::before{
+      content: "";
+      display: inline-block;
+      position: absolute;
+
+      left: 25%;
+      top: 30%;
+      width: 24px;
+      height: 21px;
+
+      background-image: url("../assets/icons/likeIconHold.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: .5s ease;
+  }
+  transition: .5s ease;
+  &:hover{
+      opacity: 1;
+      background: rgba(240, 223, 223, 0.32);
+      filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      transform: translateY(-2px);
+      &::before{
+          background-image: url("../assets/icons/likeIconHold.svg");
+      }
+  }
+  }
+
+  .playIconMovile{
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+
+    cursor: pointer;
+
+    color: $white-normal;
+
+    background: rgba(240, 223, 223, 0.16);
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 32px;
+
+&::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+
+    left: 33%;
+    top: 26%;
+    width: 24px;
+    height: 24px;
+
+    background-image: url("../assets/icons/iconPlayMobile.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: .5s ease;
+}
+transition: .5s ease;
+&:hover{
+    opacity: 1;
+    background: rgba(240, 223, 223, 0.32);
+    filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: translateY(-2px);
+}
+}
+
+.playIconMovileDisable{
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+
+  cursor: none;
+  pointer-events: none;
+  opacity: .5;
+
+  color: $white-normal;
+
+  background: rgba(240, 223, 223, 0.16);
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 32px;
+
+&::before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+
+  left: 33%;
+  top: 26%;
+  width: 24px;
+  height: 24px;
+
+  background-image: url("../assets/icons/iconPlayMobile.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: .5s ease;
+}
+transition: .5s ease;
+&:hover{
+  opacity: 1;
+  background: rgba(240, 223, 223, 0.32);
+  filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transform: translateY(-2px);
+}
+}
+
+.starButton{
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    
+    cursor: pointer;
+
+    // border: 1px solid red;
+    color: $white-normal;
+    text-transform: uppercase;
+
+    background: rgba(240, 223, 223, 0.08);
+    
+    width: 144px;
+    height: 40px;
+
+    border-radius: 26px;
+    padding-left: 26px;
+
+    &::before{
+        content: "";
+        display: inline-block;
+        position: absolute;
+
+        top: 22%;
+        left: 10%;
+        width: 16px;
+        height: 20px;
+
+        background-image: url("../assets/icons/backgroundStar.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: .7s ease;
+    }
+    transition: .5s ease;
+    &:hover{
+        opacity: 1;
+        background: rgba(240, 223, 223, 0.16);
+        filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        transform: translateY(-2px);
+        &::before{
+            background-image: url("../assets/icons/backgroundStarHover.svg");
+        }
+    }
+}
+
+
+.sumButton{
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+
+cursor: pointer;
+
+// border: 1px solid red;
+color: $white-normal;
+text-transform: uppercase;
+
+background: rgba(240, 223, 223, 0.08);
+
+width: 144px;
+height: 40px;
+
+border-radius: 26px;
+padding-left: 26px;
+
+&::before{
+  content: "+";
+  font-size: 24px;
+  display: inline-block;
+  position: absolute;
+
+  top: 20.5%;
+  left: 10%;
+  width: 16px;
+  height: 20px;
+
+  transition: .5s ease;
+}
+transition: .5s ease;
+&:hover{
+  opacity: 1;
+  background: rgba(240, 223, 223, 0.16);
+  filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transform: translateY(-2px);
+}
+}
+
+.popularButton{
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+
+cursor: pointer;
+
+// border: 1px solid red;
+color: $white-normal;
+text-transform: uppercase;
+
+background: rgba(240, 223, 223, 0.08);
+
+width: 144px;
+height: 40px;
+
+border-radius: 26px;
+padding-left: 23px;
+
+&::before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+
+  top: 22%;
+  left: 10%;
+  width: 20px;
+  height: 20px;
+
+  background-image: url("../assets/icons/backgroundPopular.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: .7s ease;
+}
+transition: .5s ease;
+&:hover{
+  opacity: 1;
+  background: rgba(240, 223, 223, 0.16);
+  filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transform: translateY(-2px);
+  &::before{
+      background-image: url("../assets/icons/backgroundPopularHover.svg");
+  }
+}
+}
+
+.FormButton{
+  position: relative;
+  background: transparent;
+  // border-radius: 16px 0px;
+  color: $white-light;
+
+  border: none;
+
+  width: 100%;
+  height: 45px;
+
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 400;
+
+  cursor: pointer;
+
+  transition: .3s ease-in;
+  &::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../assets/icons/FormButtonIcon.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    transition: .3s ease-in;
+  }
+
+  &:hover{
+     &::before{
+      background-image: url("../assets/icons/FormButtonIconHover.svg");
+     }
+    // font-weight: 400;
+    transform: scale(1.01) translateY(-1px) translateX(0px);
+  }
+}
+
+.searchButton{
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  
+  cursor: pointer;
+
+  // border: 1px solid red;
+  color: $white-normal;
+
+  background: rgba(252, 248, 248, 0.05);
+  
+  width: 48px;
+  height: 48px;
+
+  border-radius: 32px;
+  padding-left: 32px;
+
+  &::before{
+      content: "";
+      display: inline-block;
+      position: absolute;
+
+      left: 32%;
+      top: 28%;
+      width: 21px;
+      height: 22px;
+
+      background-image: url("../assets/icons/searchIcon.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      transition: .5s ease;
+  }
+  transition: .5s ease;
+  &:hover{
+      color: $black-dark;
+      background: white;
+      opacity: 1;
+      
+      transform: translateY(-2px);
+      filter: drop-shadow(0px 4px 4px rgba(33, 27, 28, 0.64));
+      &::before{
+          background-image: url("../assets/icons/searchIconHover.svg");
+      }
+  }
+
+}
+
+
+.userButton{
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  
+  cursor: pointer;
+
+  // border: 1px solid red;
+  color: $white-normal;
+
+  background: rgba(252, 248, 248, 0.05);
+  
+  width: 160px;
+  height: 48px;
+
+  border-radius: 32px;
+  padding-left: 32px;
+
+  @include responsive(s){
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    // border: 1px solid green;
+    padding-left: 0px;
+    // transform: translateX(5px) translateY(-2px);
+    border-radius: 100%;
+    @include typeface-2(p1, mobile);
+    text-transform: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+  };
+
+  &::before{
+      content: "";
+      display: inline-block;
+      position: absolute;
+
+      left: 24px;
+      width: 20px;
+      height: 20px;
+
+      background-image: url("../assets/icons/userIcon.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: .5s ease;
+      
+
+      @include responsive(s){
+        position: relative;
+        left: 0;
+        width: 50%;
+        height: 50%;
+        background-size: contain;
+        background-image: url("../assets/icons/userIconMobile.svg");
+        opacity: .8;
+        margin-bottom: 4px
+        // height: 100%;
+        // border-radius: 100%;
+      };
+  }
+  transition: .5s ease;
+  &:hover{
+      color: $black-dark;
+      background: white;
+      opacity: 1;
+
+      transform: translateY(-2px);
+      filter: drop-shadow(0px 4px 4px rgba(33, 27, 28, 0.64));
+      &::before{
+          background-image: url("../assets/icons/userIconHover.svg");
+          @include responsive(s){
+            background-image: url("../assets/icons/userIconMobile.svg");
+          };
+      }
+      @include responsive(s){
+        color: $white-normal;
+        background: transparent;
+        opacity: 1;
+
+        transform: translateY(0px);
+        filter: none;
+      };
+      
+  }
+
+  
+
+}
+
+.signedInButton{
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  
+  cursor: pointer;
+
+  // border: 1px solid red;
+  color: $white-normal;
+
+  background: rgba(252, 248, 248, 0.05);
+  
+  width: 48px;
+  height: 48px;
+
+  border-radius: 32px;
+  padding-left: 32px;
+
+  @include responsive(s){
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    // border: 1px solid green;
+    transform: translateX(5px) translateY(-2px);
+    border-radius: 100%;
+  };
+
+  &::before{
+    // border: 1px solid green;
+      content: "";
+      display: inline-block;
+      position: relative;
+
+      transform: translateX(-20px);
+      width: 28px;
+      height: 28px;
+
+      background-image: url("../assets/icons/signedIcon.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: .5s ease;
+
+      @include responsive(s){
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-image: url("../assets/icons/signedIcon.svg");
+        // height: 100%;
+        // border-radius: 100%;
+      };
+  }
+  transition: .5s ease;
+  &:hover{
+      color: $black-dark;
+      background: white;
+      opacity: 1;
+
+      transform: translateY(-2px);
+      filter: drop-shadow(0px 4px 4px rgba(33, 27, 28, 0.64));
+
+      @include responsive(s){
+        color: $white-normal;
+        background: transparent;
+        opacity: 1;
+
+        transform: translateY(0px);
+        filter: none;
+      };
+  }
+}
+
+.CardAdmin{
+  cursor: initial;
+  .sinopseHover{
+      .buttonAdd{
+          color: $green-normal;
+          text-shadow: 0px 0px 1px white,0px 0px 1px white,0px 0px 1px white,0px 0px 1px white,0px 0px 1px white,0px 0px 1px white;
+          font-size: 40px;
+          &:hover{
+              color: $green-dark;
+          }
+      }
+      .buttonDel{
+          color: $red-normal;
+          text-shadow: 0px 0px 1px white,0px 0px 1px white,0px 0px 1px white,0px 0px 1px white,0px 0px 1px white,0px 0px 1px white;
+          font-size: 40px;
+          &:hover{
+              color: $red-dark;
+          }
+      }
+      .buttonAddSwiperMain{
+        
+      }
+      button{
+
+          background: transparent;
+          border: none;
+          
+
+          font-family: "Mulish", sans-serif;
+          font-size: 24px;
+          font-weight: 700;
+
+          cursor: pointer;
+
+          transition: .3s ease;
+
+          &:hover{
+              transform: translateY(-4px) scale(1.1);
+              
+          }
+      }
+  }
+}
+
+.pages{
+    .paginationControllLeft{
+      position: relative;
+      display: inline-block;
+
+      
+      cursor: pointer;
+    
+      // border: 2px solid $white-normal;
+      // border-radius: 50%;
+      border: none;
+
+      font-size: 28px;
+      color: $white-dark;
+
+      
+
+      
+      background-color: transparent;
+      // background: rgba(252, 248, 248, 0.05);
+      
+      transition: .3s ease;
+      &:hover{
+        border-color: $primary-normal;
+        transform: translateY(-1px) translateX(-4px) scale(1.1);
+        color: $primary-normal;
+      }
+    }
+    .paginationControllRight{
+      position: relative;
+      display: inline-block;
+
+      
+      cursor: pointer;
+    
+      // border: 2px solid $white-normal;
+      // border-radius: 50%;
+      border: none;
+
+      font-size: 28px;
+      color: $white-dark;
+
+      
+
+      
+      background-color: transparent;
+      // background: rgba(252, 248, 248, 0.05);
+      
+      transition: .3s ease;
+      &:hover{
+        border-color: $primary-normal;
+        transform: translateY(-1px) translateX(4px) scale(1.1);
+        color: $primary-normal;
+      }
+    }
+    .paginationButton{
+      position: relative;
+      display: inline-block;
+
+      width: 40px;
+      height: 40px;
+
+      cursor: pointer;
+
+      border: 2px solid $white-normal;
+      border-radius: 50%;
+
+      color: $white-dark;
+      // font-weight: 600;
+
+      
+
+      background: rgba(252, 248, 248, 0.05);
+      
+      transition: .3s ease;
+      &:hover{
+        border-color: $primary-normal;
+        transform: translateY(-2px) scale(1.1);
+        color: $white-light;
+      }
+    }
+  .active {
+    border-color: $primary-normal;
+    color: $white-light;
+  }
+}
+
+//Profile
+.LogoutButton{
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+
+  align-self: flex-end;
+  
+  cursor: pointer;
+
+  // border: 1px solid red;
+  color: $white-normal;
+
+  background: rgba(252, 248, 248, 0.05);
+  
+  width: 120px;
+  height: 48px;
+
+  border-radius: 32px;
+  padding-left: 32px;
+
+  &::before{
+      content: "";
+      display: inline-block;
+      position: absolute;
+
+      left: 24px;
+      width: 20px;
+      height: 20px;
+
+      background-image: url("../assets/icons/logoutIcon.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: .5s ease;
+  }
+  transition: .5s ease;
+  &:hover{
+      color: $black-dark;
+      background: white;
+      opacity: 1;
+
+      transform: translateX(4px);
+      filter: drop-shadow(0px 4px 4px rgba(33, 27, 28, 0.64));
+      &::before{
+        background-image: url("../assets/icons/logoutIconActive.svg");
+    }
+  }
+}
+
+.tertiaryButton{
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+
+  align-self: flex-end;
+  
+  cursor: pointer;
+
+  // border: 1px solid red;
+  color: $white-normal;
+
+  background: rgba(252, 248, 248, 0.05);
+  
+  border-radius: 32px;
+
+  margin-top: 4px;
+  padding: 2px 4px;
+}
+
+
+.closeButton{
+  position: absolute;
+  top: -40px;
+  right: -20px;
+  z-index: 999;
+
+  background-color: transparent;
+  color: $white-normal;
+  opacity: .8;
+
+  border: none;
+
+  font-family: "Mulish", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+
+  padding: .25rem .5rem;
+
+  // border: 1px solid white;
+
+  cursor: pointer;
+
+  transition: .2s ease;
+
+
+  &:hover{
+    color: $primary-dark;
+    font-weight: 700;
+    opacity: 1;
+    transform:translateY(-3px) ;
+  }
+
+  transition: .8s ease;
+}
